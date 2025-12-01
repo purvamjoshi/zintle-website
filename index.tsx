@@ -10,7 +10,7 @@ import { Terms } from './pages/Terms';
 import { Refund } from './pages/Refund';
 
 const ZintleLogo = ({ h }: { h?: string }) => (
-  <img src="logo.png" alt="Zintle Logo" className={`w-auto ${h || 'h-8'} object-contain`} />
+  <img src="/zintle_logo.png" alt="Zintle Logo" className={`w-auto ${h || 'h-8'} object-contain`} />
 );
 
 // --- Components ---
