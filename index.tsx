@@ -74,7 +74,7 @@ const Header = ({ setShowLogin, setShowCoins }: { setShowLogin: (v: boolean) => 
           <button onClick={() => navTo('home')} className="hover:text-white transition-colors">Home</button>
           <button onClick={() => navTo('safety')} className="hover:text-white transition-colors">Safety</button>
           <button onClick={() => navTo('features')} className="hover:text-white transition-colors">Features</button>
-          <button onClick={() => navTo('home')} className="hover:text-white transition-colors">Creator Center</button>
+
         </nav>
 
         <div className="flex items-center gap-4">
@@ -341,8 +341,8 @@ const Features = () => (
   </section>
 );
 
-const CoinStore = ({ onClose }: { onClose: () => void }) => {
-  const [step, setStep] = useState<'store' | 'login' | 'payment' | 'success'>('store');
+const CoinStore = ({ onClose, initialStep = 'store' }: { onClose: () => void, initialStep?: 'store' | 'login' }) => {
+  const [step, setStep] = useState<'store' | 'login' | 'payment' | 'success'>(initialStep);
   const [selectedPack, setSelectedPack] = useState<any>(null);
 
   const packs = [
@@ -546,7 +546,7 @@ const Footer = () => (
           <ul className="space-y-4 text-brand-muted">
             <li><Link to="/safety" className="hover:text-brand-primary transition-colors">Safety Center</Link></li>
             <li><Link to="/guidelines" className="hover:text-brand-primary transition-colors">Guidelines</Link></li>
-            <li><Link to="/" className="hover:text-brand-primary transition-colors">Creator Program</Link></li>
+
           </ul>
         </div>
 
@@ -598,7 +598,10 @@ const Layout = () => {
       <Footer />
 
       {(showCoins || showLogin) && (
-        <CoinStore onClose={() => { setShowCoins(false); setShowLogin(false); }} />
+        <CoinStore
+          onClose={() => { setShowCoins(false); setShowLogin(false); }}
+          initialStep={showLogin ? 'login' : 'store'}
+        />
       )}
     </div>
   );
