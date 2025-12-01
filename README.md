@@ -1,20 +1,65 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# Zintle AI - Interactive Storytelling
 
-# Run and deploy your AI Studio app
+Zintle is an immersive library of AI-powered interactive stories where every conversation shapes your unique narrative journey. Designed for both casual readers and avid story lovers, Zintle puts endless adventures at your fingertips.
 
-This contains everything you need to run your app locally.
+## Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1Jm0aT9BNQScvD6zmeBmku6n6IBYhY1iI
+### 🔍 Discover Your Next Obsession
+*   **Smart Story Recommendations**:
+    *   "Because You Liked..." suggestions.
+    *   Mood-Based Picks ("Feel-Good Tales" or "Dark Thrillers").
+    *   Community Trending stories.
+*   **Advanced Story Browsing**:
+    *   Genre Shelves (Fantasy, Sci-Fi, Romance, Horror, etc.).
+    *   Length Tags (5-min Quickies to Serialized Sagas).
+    *   Thematic Collections.
 
-## Run Locally
+### 🎭 Dynamic Play Modes
+*   **Reader Mode**: Traditional choose-your-path with text options.
+*   **Roleplay Mode**: Type freely like chatting with a character.
+*   **Audio Drama**: Full voice-acted experience with sound effects.
 
-**Prerequisites:**  Node.js
+### 🎮 Game-Changing Features
+*   **Memory Timeline**: Review key past decisions.
+*   **Alternative Endings**: Replay to unlock different conclusions.
+*   **Character Relationship Meter**: See how choices affect bonds.
 
+### ✨ Premium Explorer Perks
+*   Unlimited Story Access.
+*   Early Releases.
+*   VIP Character Requests.
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### 📱 Always Within Reach
+*   Offline Reading/Listening.
+*   Cross-device Sync.
+*   Night Mode.
+
+## Tech Stack
+
+*   **Frontend**: React, Vite, TypeScript
+*   **Styling**: Tailwind CSS
+*   **Routing**: React Router DOM
+*   **Icons**: FontAwesome
+
+## Getting Started
+
+1.  **Clone the repository**:
+    ```bash
+    git clone https://github.com/purvamjoshi/zintle-website.git
+    ```
+2.  **Install dependencies**:
+    ```bash
+    npm install
+    ```
+3.  **Run the development server**:
+    ```bash
+    npm run dev
+    ```
+4.  **Open in browser**:
+    Navigate to `http://localhost:3000` (or the port shown in the terminal).
+
+## Project Structure
+
+*   `index.tsx`: Main entry point and component structure.
+*   `pages/`: Individual page components (About, Contact, Safety, etc.).
+*   `public/`: Static assets.
