@@ -238,102 +238,101 @@ const Hero = ({ setShowCoins }: { setShowCoins: (v: boolean) => void }) => (
     </div>
   </section>
 );
-
 const Features = () => (
   <section id="features" className="py-24 bg-brand-bg relative overflow-hidden">
     <div className="absolute top-0 right-0 w-1/3 h-full bg-brand-blue/5 blur-3xl -z-10"></div>
     <div className="container mx-auto px-4">
-      <div className="text-center mb-16">
+      <div className="text-center mb-20">
         <h2 className="text-4xl md:text-5xl font-extrabold text-white mb-6">Your Gateway to <span className="text-gradient">Infinite Adventures</span></h2>
         <p className="text-brand-muted text-lg max-w-3xl mx-auto leading-relaxed">
-          Dive into Zintle's immersive library of AI-powered interactive stories, where every conversation shapes your unique narrative journey. Designed for both casual readers and avid story lovers.
+          Dive into Zintle's immersive library of AI-powered interactive stories, where every conversation shapes your unique narrative journey. Designed for both casual readers and avid story lovers, our Story Explorer puts endless adventures at your fingertips.
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-20">
         {/* Card 1 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-primary">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-primary h-full">
           <div className="w-14 h-14 rounded-2xl bg-brand-primary/20 flex items-center justify-center text-brand-primary text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-wand-magic-sparkles"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Smart Recommendations</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span>"Because You Liked..." suggestions</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span>Mood-Based Picks & Filters</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span>Community Trending stories</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span><strong className="text-white">"Because You Liked..."</strong> – Follow-up stories matching your tastes</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span><strong className="text-white">Mood-Based Picks</strong> – "Feel-Good Tales" or "Dark Thrillers" filters</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-primary mt-1"></i> <span><strong className="text-white">Community Trending</strong> – See what stories are going viral</span></li>
           </ul>
         </div>
 
         {/* Card 2 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-blue">
-          <div className="w-14 h-14 rounded-2xl bg-brand-blue/20 flex items-center justify-center text-brand-blue text-2xl mb-6 group-hover:scale-110 transition-transform">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-blue-500 h-full">
+          <div className="w-14 h-14 rounded-2xl bg-blue-500/20 flex items-center justify-center text-blue-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-compass"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Advanced Browsing</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-blue mt-1"></i> <span>15+ Genre Shelves (Sci-Fi, Horror...)</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-blue mt-1"></i> <span>Length Tags (Quickies to Epics)</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-blue mt-1"></i> <span>Curated Thematic Collections</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong className="text-white">Genre Shelves</strong> (Fantasy, Sci-Fi, Romance, Horror + 15 more)</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong className="text-white">Length Tags</strong> (5-min Quickies | 30-min Epics | Serialized Sagas)</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-blue-400 mt-1"></i> <span><strong className="text-white">Thematic Collections</strong> ("Strong Female Leads" | "Mind-Bend Mysteries")</span></li>
           </ul>
         </div>
 
         {/* Card 3 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-teal">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-teal h-full">
           <div className="w-14 h-14 rounded-2xl bg-brand-teal/20 flex items-center justify-center text-brand-teal text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-masks-theater"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Dynamic Play Modes</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong>Roleplay Mode:</strong> Chat freely</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong>Reader Mode:</strong> Choose paths</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong>Audio Drama:</strong> Full voice-acting</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong className="text-white">Reader Mode</strong> – Traditional choose-your-path with text options</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong className="text-white">Roleplay Mode</strong> – Type freely like chatting with a character</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-teal mt-1"></i> <span><strong className="text-white">Audio Drama</strong> – Full voice-acted experience with sound effects</span></li>
           </ul>
         </div>
 
         {/* Card 4 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-gold">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-brand-gold h-full">
           <div className="w-14 h-14 rounded-2xl bg-brand-gold/20 flex items-center justify-center text-brand-gold text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-gamepad"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Game-Changing Features</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span>Memory Timeline of decisions</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span>Unlock Alternative Endings</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span>Character Relationship Meter</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span><strong className="text-white">Memory Timeline</strong> – Review key past decisions that shaped your story</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span><strong className="text-white">Alternative Endings</strong> – Replay to unlock different conclusions</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-brand-gold mt-1"></i> <span><strong className="text-white">Character Relationship Meter</strong> – See how your choices affect bonds</span></li>
           </ul>
         </div>
 
         {/* Card 5 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-purple-500 relative overflow-hidden">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-purple-500 relative overflow-hidden h-full">
           <div className="absolute top-0 right-0 bg-purple-500 text-white text-[10px] font-bold px-3 py-1 rounded-bl-lg">PREMIUM</div>
           <div className="w-14 h-14 rounded-2xl bg-purple-500/20 flex items-center justify-center text-purple-400 text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-crown"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Premium Perks</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span>Unlimited Story Access (No caps)</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span>Early Releases (1 week ahead)</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span>VIP Character Requests</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span><strong className="text-white">Unlimited Story Access</strong> – No daily caps on premium content</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span><strong className="text-white">Early Releases</strong> – Get new stories 1 week before free users</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-purple-400 mt-1"></i> <span><strong className="text-white">VIP Character Requests</strong> – Suggest traits for future AI personas</span></li>
           </ul>
         </div>
 
         {/* Card 6 */}
-        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-gray-400">
-          <div className="w-14 h-14 rounded-2xl bg-gray-600/30 flex items-center justify-center text-gray-300 text-2xl mb-6 group-hover:scale-110 transition-transform">
+        <div className="glass-card p-8 rounded-3xl hover:bg-white/5 transition-all group border-l-4 border-l-gray-400 h-full">
+          <div className="w-14 h-14 rounded-2xl bg-gray-700 flex items-center justify-center text-gray-300 text-2xl mb-6 group-hover:scale-110 transition-transform">
             <i className="fa-solid fa-mobile-screen"></i>
           </div>
           <h3 className="text-2xl font-bold text-white mb-4">Always Within Reach</h3>
           <ul className="space-y-3 text-brand-muted">
-            <li className="flex gap-2"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span>Offline Reading & Listening</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span>Sync Progress across devices</span></li>
-            <li className="flex gap-2"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span>Night Mode for bedtime</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span><strong className="text-white">Download Stories</strong> for offline reading/listening</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span><strong className="text-white">Sync Progress</strong> across all your devices</span></li>
+            <li className="flex gap-3"><i className="fa-solid fa-check text-gray-400 mt-1"></i> <span><strong className="text-white">Night Mode</strong> – Dark theme for bedtime reading</span></li>
           </ul>
         </div>
       </div>
 
-      <div className="mt-16 text-center animate-slide-up">
-        <p className="text-xl text-white font-medium italic mb-8">"The best stories aren't just read—they're lived. Where will Zintle take you today?"</p>
-        <button className="bg-brand-primary hover:bg-brand-secondary text-white font-bold py-4 px-10 rounded-full shadow-lg shadow-brand-primary/30 transition-all transform hover:scale-105">
+      <div className="text-center">
+        <p className="text-xl md:text-2xl text-white font-serif italic mb-10 opacity-90">"The best stories aren't just read—they're lived. Where will Zintle take you today?"</p>
+        <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-90 text-white font-bold py-4 px-10 rounded-full shadow-xl shadow-brand-primary/30 transition-all transform hover:scale-105 text-lg">
           Start Exploring Now
         </button>
       </div>
