@@ -488,7 +488,7 @@ const CoinSection = ({ setShowCoins }: { setShowCoins: (v: boolean) => void }) =
               className={`relative bg-white rounded-3xl p-6 text-center transition-transform hover:-translate-y-1 ${pkg.highlight ? 'border-2 border-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.3)]' : ''}`}
             >
               {pkg.tag && (
-                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-white text-xs font-bold px-3 py-1 rounded-full ${pkg.highlight ? 'bg-purple-600' : 'text-green-600 bg-green-100 top-auto bottom-20'}`}>
+                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full ${pkg.highlight ? 'bg-purple-600 text-white' : 'text-green-600 bg-green-100'}`}>
                   {pkg.tag}
                 </span>
               )}
