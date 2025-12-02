@@ -72,8 +72,9 @@ const Header = ({ setShowLogin, setShowCoins }: { setShowLogin: (v: boolean) => 
 
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium text-brand-muted">
           <button onClick={() => navTo('home')} className="hover:text-white transition-colors">Home</button>
-          <button onClick={() => navTo('safety')} className="hover:text-white transition-colors">Safety</button>
           <button onClick={() => navTo('features')} className="hover:text-white transition-colors">Features</button>
+          <button onClick={() => navTo('guidelines')} className="hover:text-white transition-colors">Guidelines</button>
+          <button onClick={() => navTo('privacy')} className="hover:text-white transition-colors">Privacy Policy</button>
 
         </nav>
 
@@ -346,7 +347,7 @@ const CoinStore = ({ onClose, initialStep = 'store' }: { onClose: () => void, in
 
   const packs = [
     { coins: 100, price: 99, bonus: 0, color: 'bg-brand-surface' },
-    { coins: 300, price: 249, bonus: 16, color: 'bg-brand-surface border border-brand-primary/50' },
+    { coins: 300, price: 249, bonus: 16, color: 'bg-brand-surface' },
     { coins: 1000, price: 799, bonus: 20, tag: 'BEST VALUE', color: 'bg-gradient-to-br from-brand-primary/20 to-brand-secondary/20 border border-brand-primary' },
     { coins: 2500, price: 1999, bonus: 25, color: 'bg-brand-surface' },
   ];
@@ -485,24 +486,24 @@ const CoinSection = ({ setShowCoins }: { setShowCoins: (v: boolean) => void }) =
           {packages.map((pkg, i) => (
             <div
               key={i}
-              className={`relative bg-white rounded-3xl p-6 text-center transition-transform hover:-translate-y-1 ${pkg.highlight ? 'border-2 border-purple-500 shadow-[0_0_20px_rgba(168,85,247,0.3)]' : ''}`}
+              className={`relative glass-card rounded-3xl p-6 text-center transition-transform hover:-translate-y-1 ${pkg.highlight ? 'border-2 border-brand-gold shadow-[0_0_20px_rgba(255,215,0,0.3)]' : 'hover:bg-white/5'}`}
             >
               {pkg.tag && (
-                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full ${pkg.highlight ? 'bg-purple-600 text-white' : 'text-green-600 bg-green-100'}`}>
+                <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-3 py-1 rounded-full ${pkg.highlight ? 'bg-brand-gold text-black' : 'text-green-600 bg-green-100'}`}>
                   {pkg.tag}
                 </span>
               )}
 
-              <div className="flex justify-center mb-4 text-purple-600 text-2xl">
+              <div className="flex justify-center mb-4 text-brand-gold text-2xl">
                 <i className="fa-solid fa-coins"></i>
               </div>
 
-              <h3 className="text-xl font-bold text-gray-900 mb-1">{pkg.coins} Coins</h3>
-              <p className="text-2xl font-bold text-purple-600 mb-6">₹{pkg.price}</p>
+              <h3 className="text-xl font-bold text-white mb-1">{pkg.coins} Coins</h3>
+              <p className="text-2xl font-bold text-white mb-6">₹{pkg.price}</p>
 
               <button
                 onClick={() => setShowCoins(true)}
-                className="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-3 rounded-xl transition-colors shadow-lg shadow-purple-600/20"
+                className="w-full bg-gradient-to-r from-brand-primary to-brand-secondary hover:opacity-90 text-white font-bold py-3 rounded-xl transition-all shadow-lg shadow-brand-primary/20"
               >
                 Login
               </button>
